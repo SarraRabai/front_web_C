@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}", // include your file types and folders
+  ],
   theme: {
     extend: {},
   },
   plugins: [require("daisyui")],
-  resolve: {
-    extensions: [".js", ".jsx", ".json"], // Ajoute le support des extensions
-  },
 };
